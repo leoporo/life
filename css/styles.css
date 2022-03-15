@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "lato-light";
+  src: url("/fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "lato-thin";
+  src: url("/fonts/Lato/Lato-Thin.ttf");
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url("/fonts/Lato/Lato-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: lato-regular;
+}
+
+::selection {
+  color: white;
+  background-color: rgb(0, 37, 70);
+}
+
+header {
+  background-color: beige;
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-size: 5rem;
+  font-family: lato-thin;
+  margin-left: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 1rem;
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+.main-image {
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(190, 190, 190);
+  margin-bottom: 1rem;
+}
+
+header nav {
+  font-size: 2rem;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(0, 37, 70);
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(0, 37, 70);
+  background-color: white;
+}
+
+h1, h2 {
+  font-family: lato-thin;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-family: lato-thin;
+  margin-bottom: 0.5rem;
+}
+
+.welcome {
+  font-family: lato-thin;
+}
+
+.lato-thin {
+  font-family: lato-thin;
+}
+
+.patient-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.clickable-card {
+  text-decoration: none;
+  color: black;
+}
+
+.patient-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgb(190, 190, 190);
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.patient-image {
+  border: 1px solid rgb(190, 190, 190);
+  width: 10rem;
+  margin-right: 2rem
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact-info {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info > div {
+  text-align: left;
+}
+
+.main {
+  background-color: rgb(225, 225, 225);
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .main {
+        width: 100%;
+    }
+
+    .main-image {
+      width: 100%;
+    }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+.form input,
+.form select,
+.form option {
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+.register-link:link {
+  text-decoration: none;
+  color: black;
+  align-self: center;
+}
+
+.register-link:visited {
+  color: black;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.form-validation {
+  display: none;
+  color: red;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 15rem;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 37, 70);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(0, 83, 155);
+}
+
+.btn:active {
+    background-color: rgb(0, 37, 70);
+}
+
+.form * {
+    margin-bottom: 2rem;
+}
+
+#auth span {
+  color: white;
+  font-size: 1rem;
+  align-self: center;
+  margin-right: 1rem;
+}
