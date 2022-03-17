@@ -110,27 +110,28 @@ header {
 
 .toggle-button {
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
   right: 1rem;
+  gap: .4rem;
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  width: 3rem;
+  width: 2rem;
   height: 3rem;
 }
 
 .toggle-button span {
-  height: 0.4rem;
+  height: .3rem;
   width: 100%;
   background-color: white;
   border-radius: 1rem;
 }
 
+.toggle-button span:last-child {
+  margin-bottom: 0;
+}
+
 .toggle-button:hover span {
-  height: 0.4rem;
-  width: 100%;
   background-color: rgb(0, 83, 155);
-  border-radius: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -139,14 +140,14 @@ header {
   }
 
   .navbar {
-    height: 6rem;
+    height: 3.5rem;
   }
 
   .navbar-links {
     position: absolute;
     display: none;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 3.5rem;
     width: 100%;
   }
 
