@@ -27,6 +27,11 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  color: #006d77;
+  font-size: 2rem;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -40,6 +45,7 @@ header {
 }
 
 .container {
+  background-color: white;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -47,13 +53,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 4rem;
+  text-align: center;
 }
 
 .hero-image {
   position: absolute;
   left: 0;
-  z-index: -2;
   height: 36rem;
   width: 100%;
   object-fit: cover;
@@ -63,6 +68,17 @@ header {
   position: absolute;
   top: 30rem;
   left: 0;
+}
+
+.sherbimet,
+.doktoret,
+.rreth {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sherbimet {
+  line-height: 2rem;
 }
 
 .contact-search {
@@ -88,7 +104,7 @@ header {
 
 .hero-search {
   margin-top: 27rem;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   z-index: 0;
 }
 
@@ -188,7 +204,7 @@ a {
   color: #111;
 }
 
-a::after {
+.navbar a::after {
   content: "";
   position: absolute;
   bottom: -.75rem;
@@ -218,14 +234,6 @@ a:hover::after {
   font-size: .8rem;
 }
 
-h1,
-h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  margin: 0;
-  margin-bottom: 2rem;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -239,7 +247,8 @@ footer {
   font-size: 0.9rem;
   color: #111;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 footer .kontakti {
