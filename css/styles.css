@@ -202,6 +202,7 @@ a {
   position: relative;
   text-decoration: none;
   color: #111;
+  cursor: pointer;
 }
 
 .navbar a::after {
@@ -238,6 +239,32 @@ ul {
   list-style-type: none;
   padding: 0;
   text-transform: uppercase;
+}
+
+.top-btn {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  background-color: #e29578;
+  color: #edf6f9;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.top-btn:hover {
+  background-color: #f1b9a5;
+}
+
+
+.top-btn:active {
+  background-color: #e29578;
 }
 
 footer {

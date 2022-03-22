@@ -42,6 +42,21 @@ if (logoutBtn !== null) {
   });
 }
 
-document.querySelector(".toggle-button").addEventListener("click", function(){
-  document.querySelector(".navbar-links").classList.toggle("active");
+const topBtn = document.querySelector("#topBtn  ");
+window.onscroll = () => showTopBtn();
+
+const showTopBtn = () => {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    topBtn.style.display = "flex";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+
+topBtn.addEventListener("click", function(){
+  // document.body.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
+  document.body.scrollIntoView({
+    behavior: "smooth"
+  });
 });
