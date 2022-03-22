@@ -8,7 +8,8 @@
   #e29578
   #111
   #7a7a7a
-  #bdbdbd;
+  #bdbdbd
+  #b5b5b5
 */
 
 * {
@@ -37,11 +38,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 16rem;
-  position: sticky;
-  top: 0;
   background-color: #edf6f9;
   padding: 1rem 9rem;
-  z-index: 9;
 }
 
 .container {
@@ -74,7 +72,7 @@ header {
 .doktoret,
 .rreth {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .sherbimet {
@@ -255,6 +253,7 @@ ul {
   background-color: #e29578;
   color: #edf6f9;
   transition: all .3s ease;
+  z-index: 9;
   cursor: pointer;
 }
 
@@ -267,8 +266,80 @@ ul {
   background-color: #e29578;
 }
 
+.testimonials {
+  position: relative;
+  background-image: linear-gradient(#006d77, #42999b);
+  padding: 1rem 1.5rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 4rem auto auto auto;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.testimonials h2 {
+  color: #edf6f9;
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.quotes {
+  position: absolute;
+  top: -3rem;
+  left: 3rem;
+  background-color: #f1b9a5;
+  border: none;
+  border-radius: 4rem;
+  padding: 3rem;
+}
+
+.testimonial {
+  background-color: #edf6f9;
+  color: #111;
+  border-radius: .75rem;
+  width: 65%;
+  height: 24rem;
+}
+
+.testimonial-pic {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+}
+
+.testimonial .text {
+  padding: .5rem 1rem;
+}
+
+.testimonial.first {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.testimonial.second {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.testimonial.third {
+  grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.testimonial.fourth {
+  grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.testimonial.fifth {
+  grid-area: 3 / 2/ span 1/ span 1;
+}
+
+.testimonial.sixth {
+  grid-area: 3 / 3/ span 1 /span 1;
+}
+
 footer {
-  background-color: #bdbdbd;
+  background-color: #bbb;
   text-align: center;
   padding: 1rem 3rem;
   font-size: 0.9rem;
