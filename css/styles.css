@@ -90,6 +90,24 @@ header {
   line-height: 2rem;
 }
 
+.doctor-cards {
+  display: flex;
+  gap: 3rem;
+}
+
+.doctor-card {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.doctor-card img {
+  width: 100%;
+}
+
 .rreth {
   width: 100%;
   margin: 6rem auto;
