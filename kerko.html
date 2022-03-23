@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Kerko</title>
+</head>
+<body>
+    <header>
+      <a href="/">
+        <img
+          class="logo"
+          src="./images/logo.png"
+          alt="Logo"
+          title="Logo"
+          width="96"
+        />
+      </a>
+      <nav class="navbar">
+        <div class="contact-search">
+          <button class="btn btn-primary rounded shadow">Rezervo termin</button>
+          <form action="/kerko.html" method="get">
+            <input
+              type="text"
+              class="search-input rounded shadow"
+              placeholder="Kërko"
+              name="termi"
+            />
+            <button type="submit" class="btn btn-secondary rounded search-btn">
+              <img src="./images/icons/search.svg" width="16" alt="" />
+            </button>
+          </form>
+        </div>
+        <ul>
+          <li><a href="/">Ballina</a></li>
+          <li><a id="goto_sherbimet">Shërbimet</a></li>
+          <li><a id="goto_doktoret">Doktorët</a></li>
+          <li><a id="goto_rreth">Rreth nesh</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <h2>Rezultatet e kërkimit</h2>
+        <p>Nuk u gjet asnjë rezultat sipas termit "<span id="searchTerm"></span>"</p>   
+        <div>
+            <button class="btn goback-btn shadow" onclick="history.back()">
+                <img src="./images/icons/goback.png">
+                Kthehu prapa</button>
+        </div>
+    </div>
+    <button class="top-btn rounded" id="topBtn">
+      <img src="./images/icons/top.svg" class="top" />
+    </button>
+    <footer>
+      <div class="kontakti">
+        <h3>Kontakti:</h3>
+        <p>Telefoni: +383 49 123 456</p>
+        <p>Email: support@life.com</p>
+        <p>Adresa: Rr. Tirana 10000 Prishtinë</p>
+        <p>Republika e Kosovës</p>
+      </div>
+      <div>
+        <h3>Na ndiqni:</h3>
+        <a href="https://facebook.com" target="_blank">
+          <img src="./images/fb_icon.svg" alt="" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="./images/twitter_icon.svg" alt="" />
+        </a>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/search.js"></script>
+</body>
+</html>
