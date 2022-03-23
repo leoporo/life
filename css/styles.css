@@ -90,6 +90,28 @@ header {
   line-height: 2rem;
 }
 
+.services {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.service {
+  border: .1rem solid #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.service img {
+  width: 6rem;
+  margin-bottom: 1.5rem;
+}
+
 .doctor-cards {
   display: flex;
   justify-content: center;
@@ -208,8 +230,16 @@ header {
   border-radius: .15rem;
 }
 
+.rounded-xl {
+  border-radius: 1rem;
+}
+
 .shadow {
   box-shadow: 0 .15rem .25rem #bdbdbd;
+}
+
+.shadow-xl {
+  box-shadow: .5rem .5rem .5rem #bdbdbd;
 }
 
 form {
