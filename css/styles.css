@@ -92,6 +92,7 @@ header {
 
 .doctor-cards {
   display: flex;
+  justify-content: center;
   gap: 3rem;
 }
 
