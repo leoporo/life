@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>Ballina - Klinika Life</title>
   </head>
   <body>
@@ -68,8 +72,84 @@
       </div>
       <img src="./images/overlay.webp" class="overlay" />
       <article>
-        <h1>Mirë se vini në klinikën tonë</h1>
+        
 
+        <div class="carousel sherbimet-carousel" id="sherbimet_carousel">
+          <h2>Shërbimet tona</h2>
+          <!-- Slider main container -->
+          <div class="swiper sherbimet-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="service">
+                  <img src="./images/icons/hospital.png" />
+                  <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, error.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service">
+                  <img src="./images/icons/healthcare.png" />
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque, error.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service">
+                  <img src="./images/icons/stethoscope.png" />
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque, error.
+                  </p>
+                </div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="carousel" id="doktoret_carousel">
+          <h2>Doktorët tanë</h2>
+          <!-- Slider main container -->
+          <div class="swiper doktoret-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="doctor">
+                  <img src="./images/profile_pictures/dok1.jpg" />
+                  <h3>Dr. Britton Mark</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="doctor">
+                  <img src="./images/profile_pictures/dok2.jpg" />
+                  <h3>Dr. Joann Kevan</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="doctor">
+                  <img src="./images/profile_pictures/dok3.jpg" />
+                  <h3>Dr. Veronica Laurel</h3>
+                </div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
         <div class="sherbimet" id="sherbimet">
           <h2>Shërbimet tona</h2>
           <div class="services">
@@ -102,6 +182,7 @@
           </div>
         </div>
 
+
         <div class="doktoret" id="doktoret">
           <h2>Doktorët tanë</h2>
           <div class="doctor-cards">
@@ -125,68 +206,205 @@
       <img src="./images/overlay_flipped.png" />
     </div>
     <div class="rreth" id="rreth">
-      <div class="text">
-        <h1>Rreth nesh</h1>
+    
+        <h1 class="text-shadow">Rreth nesh</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
           officiis architecto dicta repudiandae velit voluptates laudantium
           nostrum earum impedit repellendus natus quaerat quis, sequi provident
           possimus ratione, dolore aspernatur enim.
         </p>
-      </div>
+      
     </div>
+
+    
+<div class="testimonials-carousel-container">
+    <div class="carousel testimonials-carousel">
+      <h1 class="text-shadow">Çfarë thonë pacientët tanë</h1>
+      
+        <!-- Slider main container -->
+        <div class="swiper testimonials-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                </div>
+                <p class="text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit, consectetur neque autem in modi dolorem.
+                </p>
+                <div class="author">
+                  <img src="./images/profile_pictures/t1.jpg" class="testimonial-pic" />
+                <p><strong>Ernest Mckinney</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial second">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                </div>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore hic
+                  distinctio, illum minima nobis est.
+                </p>
+                <div class="author">
+                  <img src="./images/profile_pictures/t2.jpg" class="testimonial-pic" />
+                <p><strong>Rachel Wood</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial third">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                </div>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
+                  dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
+                </p>
+                <div class="author">
+                  <img src="./images/profile_pictures/t3.png" class="testimonial-pic" />
+                <p><strong>Mark Conner</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial fourth">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                </div>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
+                  dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
+                </p>
+                <div class="author">
+                  <img src="./images/profile_pictures/t1.jpg" class="testimonial-pic" />
+                <p><strong>Julian Mills</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial fifth">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                </div>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
+                  dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
+                </p>
+                <div class="author">
+                  <img src="./images/profile_pictures/t2.jpg" class="testimonial-pic" />
+                <p><strong>Sophia Houghton</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial sixth">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                </div>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
+                  dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
+                </p>
+                <div>
+                  <img src="./images/profile_pictures/t3.png" class="testimonial-pic" />
+                <p class="author"><strong>Aaron John</strong></p>
+                </div>
+              </div>
+            </div>
+            ......
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      
+    </div>
+    </div>
+
     <div class="testimonials">
-      <div class="quotes">
-        <img src="./images/icons/quotes.svg" width="32" />
-      </div>
-      <h1>Çfarë thonë pacientët tanë</h1>
+      <h1 class="text-shadow">Çfarë thonë pacientët tanë</h1>
       <div class="testimonial first">
-        <img src="./images/profile_pictures/t1.jpg" class="testimonial-pic" />
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+        </div>
         <p class="text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Reprehenderit, consectetur neque autem in modi dolorem.
         </p>
-        <p class="author"><strong>Ernest Mckinney</strong></p>
+        <div class="author">
+          <img src="./images/profile_pictures/t1.jpg" class="testimonial-pic" />
+        <p><strong>Ernest Mckinney</strong></p>
+        </div>
       </div>
       <div class="testimonial second">
-        <img src="./images/profile_pictures/t2.jpg" class="testimonial-pic" />
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+        </div>
         <p class="text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore hic
           distinctio, illum minima nobis est.
         </p>
-        <p class="author"><strong>Rachel Wood</strong></p>
+        <div class="author">
+          <img src="./images/profile_pictures/t2.jpg" class="testimonial-pic" />
+        <p><strong>Rachel Wood</strong></p>
+        </div>
       </div>
       <div class="testimonial third">
-        <img src="./images/profile_pictures/t3.png" class="testimonial-pic" />
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+        </div>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
           dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
         </p>
-        <p class="author"><strong>Mark Conner</strong></p>
+        <div class="author">
+          <img src="./images/profile_pictures/t3.png" class="testimonial-pic" />
+        <p><strong>Mark Conner</strong></p>
+        </div>
       </div>
       <div class="testimonial fourth">
-        <img src="./images/profile_pictures/t1.jpg" class="testimonial-pic" />
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+        </div>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
           dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
         </p>
-        <p class="author"><strong>Julian Mills</strong></p>
+        <div class="author">
+          <img src="./images/profile_pictures/t1.jpg" class="testimonial-pic" />
+        <p><strong>Julian Mills</strong></p>
+        </div>
       </div>
       <div class="testimonial fifth">
-        <img src="./images/profile_pictures/t2.jpg" class="testimonial-pic" />
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+        </div>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
           dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
         </p>
-        <p class="author"><strong>Sophia Houghton</strong></p>
+        <div class="author">
+          <img src="./images/profile_pictures/t2.jpg" class="testimonial-pic" />
+        <p><strong>Sophia Houghton</strong></p>
+        </div>
       </div>
       <div class="testimonial sixth">
-        <img src="./images/profile_pictures/t3.png" class="testimonial-pic" />
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="quotes"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+        </div>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta
           dignissimos voluptates nemo dolorem aut cupiditate eos deleniti.
         </p>
-        <p class="author"><strong>Aaron John</strong></p>
+        <div class="author">
+          <img src="./images/profile_pictures/t3.png" class="testimonial-pic" />
+        <p><strong>Aaron John</strong></p>
+        </div>
       </div>
     </div>
 
@@ -196,10 +414,12 @@
     <footer>
       <div class="kontakti">
         <h3>Kontakti:</h3>
-        <p>Telefoni: +383 49 123 456</p>
-        <p>Email: support@life.com</p>
-        <p>Adresa: Rr. Tirana 10000 Prishtinë</p>
-        <p>Republika e Kosovës</p>
+        <ul>
+          <li>Telefoni: +383 49 123 456</li>
+          <li>Email: support@life.com</li>
+          <li>Adresa: Rr. Tirana 10000 Prishtinë</li>
+          <li>Republika e Kosovës</li>
+        </ul>
       </div>
       <div>
         <h3>Na ndiqni:</h3>
@@ -213,5 +433,25 @@
     </footer>
     <script type="module" src="./js/app.js"></script>
     <script type="module" src="./js/index.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const sherbimetSwiper = new Swiper(".sherbimet-swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      const doktoretSwiper = new Swiper(".doktoret-swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      const testimonialsSwiper = new Swiper(".testimonials-swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
