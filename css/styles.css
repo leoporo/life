@@ -477,7 +477,7 @@ ul {
 }
 
 #snackbar {
-  /* visibility: hidden; */
+  visibility: hidden;
   position: fixed;
   bottom: 2rem;
   left: 50%;
