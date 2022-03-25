@@ -237,7 +237,7 @@ header {
   opacity: 1;
 }
 
-.schedule-form {
+.appointment-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,24 +248,41 @@ header {
   border-radius: .15rem;
 }
 
-.schedule-form input[type=text],
-.schedule-form input[type=email] {
+.appointment-form input[type=text],
+.appointment-form input[type=email],
+.appointment-form select {
   font-size: 1.5rem;
   border: none;
   padding: 1rem;
   color: #006d77;
 }
 
-.schedule-form input[type=text]:focus {
+.appointment-form select {
+  width: 100%;
+  color:rgb(117, 117, 117);
+  background-color: white;
+}
+
+.appointment-form select .first {
+  color: rgb(117, 117, 117);
+}
+
+.appointment-form select .others {
+  color: #006d77;
+}
+
+
+.appointment-form input[type=text]:focus,
+.appointment-form select:focus {
   outline: none;
 }
 
-.schedule-form button {
+.appointment-form button {
   width: 100%;
   font-size: 1.5rem;
 }
 
-.container .schedule-btn {
+.container .appointment-btn {
   display: flex;
   align-items: center;
   justify-content: center;
