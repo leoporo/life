@@ -53,10 +53,6 @@ header {
   padding: 1rem 9rem;
 }
 
-.logo {
-  /* margin-right: 10rem; */
-}
-
 .container {
   position: relative;
   background-color: white;
@@ -142,7 +138,6 @@ header {
 
 .service img {
   width: 6rem;
-  margin-bottom: 1.5rem;
 }
 
 .doctor-cards {
@@ -214,6 +209,7 @@ header {
   padding-right: 3rem;
 }
 
+
 .hero-search {
   margin-top: 27rem;
   margin-bottom: 4rem;
@@ -239,6 +235,15 @@ header {
 
 .hero-search-input:focus {
   opacity: 1;
+}
+
+.container .schedule-btn {
+  font-size: 1.2rem;
+  color: #edf6f9;
+  width: 100%;
+  position: absolute;
+  top: 22rem;
+  width: 22rem;
 }
 
 .hero-search-btn {
@@ -278,6 +283,11 @@ header {
 
 .text-shadow {
   text-shadow: 0.25rem 0.25rem #006d77;
+}
+
+.sherbimet p,
+.sherbimet-carousel p {
+  font-size: 1.2rem;
 }
 
 form {

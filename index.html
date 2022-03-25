@@ -24,10 +24,10 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg></a></li>
         <li><a href="#">Ballina</a></li>
-        <li><a href="#" id="rezervo">Rezervo Termin</a></li>
         <li><a href="#sherbimet_carousel">Shërbimet</a></li>
         <li><a href="#doktoret_carousel">Doktorët</a></li>
         <li><a href="#rreth">Rreth nesh</a></li>
+        <li><a href="#" id="rezervo">Rezervo Termin</a></li>
       </ul>
     </nav>
     <header>
@@ -55,7 +55,6 @@
               +383 49 123 456
             </span>
           </div>
-          <button class="btn btn-primary rounded shadow">Rezervo termin</button>
           <form action="/kerko.html" method="get">
             <input
               type="text"
@@ -79,8 +78,9 @@
     </header>
 
     <div class="container">
-      <img src="./images/hero.jpg" class="hero-image" />
-      <div class="hero-search">
+      <img src="./images/hero.jpg" class="hero-image" draggable="false"/>
+        <button class="btn btn-secondary schedule-btn rounded"><strong>Rezervo termin</strong></button>
+        <div class="hero-search">
         <form action="/kerko.html">
           <input
             type="text"
