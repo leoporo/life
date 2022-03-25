@@ -477,7 +477,7 @@ ul {
 }
 
 #snackbar {
-  visibility: hidden;
+  /* visibility: hidden; */
   position: fixed;
   bottom: 2rem;
   left: 50%;
@@ -489,7 +489,10 @@ ul {
   font-size: 1.15rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: .5rem;
+  width: 70%;
+  z-index: 5;
 }
 
 #snackbar.show {
@@ -670,12 +673,24 @@ footer img {
   .rreth p {
     width: 100%;
   }
+
+  #snackbar {
+    width: 70%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 988px) {
   header {
     padding: 0.5rem 1rem;
     gap: 0;
+  }
+
+  #snackbar {
+    width: 70%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .service {
