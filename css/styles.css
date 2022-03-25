@@ -250,6 +250,7 @@ header {
 
 .appointment-form input[type=text],
 .appointment-form input[type=email],
+.appointment-form input[type=date],
 .appointment-form select {
   font-size: 1.5rem;
   border: none;
@@ -257,6 +258,14 @@ header {
   color: #006d77;
 }
 
+.appointment-form label {
+  font-size: 1.5rem;
+}
+
+.appointment-form input[type=date] {
+  width: 100%;
+  background-color: white;
+}
 .appointment-form select {
   width: 100%;
   color:rgb(117, 117, 117);
@@ -270,7 +279,6 @@ header {
 .appointment-form select .others {
   color: #006d77;
 }
-
 
 .appointment-form input[type=text]:focus,
 .appointment-form select:focus {
