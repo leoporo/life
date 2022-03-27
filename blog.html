@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <title>Ballina - Klinika Life</title>
+    <title>Blogu - Klinika Life</title>
   </head>
   <body>
     <nav class="navbar-responsive">
@@ -57,13 +57,13 @@
           </div>
           <form action="/kerko.html" method="get">
             <input
-              type="text"
+              type="search"
               class="search-input rounded shadow"
               placeholder="Kërko"
               name="termi"
             />
             <button type="submit" class="btn btn-secondary rounded search-btn">
-              <img src="./images/icons/search.svg" width="16" alt="" />
+              <img src="./images/icons/search.svg" width="16" />
             </button>
           </form>
         </div>
@@ -78,7 +78,8 @@
     </header>
 
 <div class="container">
-    <h2>Blog</h2>
+    <h2 id="blogTitle">Blogu</h2>
+    <div class="post-not-found"><h2>Gabim 404: Artikulli nuk u gjet!</h2></div>
     <div class="posts"></div>
 </div>
 

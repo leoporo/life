@@ -66,6 +66,10 @@ header {
   text-align: center;
 }
 
+.home-blog {
+  margin-top: 8rem;
+}
+
 .home-posts {
   display: flex;
   justify-content: center;
@@ -79,7 +83,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   margin-bottom: 8rem;
   color: #111;
   padding: 1rem 6rem;
@@ -92,29 +96,61 @@ header {
   margin-bottom: 2rem;
 }
 
+.posts .post-title-link:hover {
+  text-decoration: underline;
+  color: #006d77;
+}
+
+.posts .post-date {
+  color: #7a7a7a;
+  font-size: 1rem;
+}
+
 .posts p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
-.post {
-  padding: 3rem;
-  /* width: 50%; */
+.single-post {
   text-align: left;
 }
 
-.post:hover {
+.post {
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-posts .post:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
+.post-image {
+  width: 38rem;
+}
+
+.home-post {
+  display: flex;
+  align-items: start;
+}
+
 .post-image-thumbnail {
-  float: left;
   margin-right: 1rem;
-  width: 128px;
-  height: 128px;
+  width: 100%;
+  height: 50%;
   border-radius: .2rem;
   object-fit: cover;
+}
+
+.post-content {
+  width: 65%;
+}
+
+.post-not-found {
+  display: none;
 }
 
 .testimonial-header {
@@ -760,6 +796,27 @@ footer img {
     padding-left: 0;
     padding-right: 0;
   }
+
+  .home-posts {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  .posts {
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .posts img {
+    width: 16rem;
+  }
 }
 
 @media (max-width: 988px) {
@@ -768,8 +825,23 @@ footer img {
     gap: 0;
   }
 
+  .post-content {
+    width: 100%;
+  }
+
   .container .hero-tagline {
     font-size: 4rem;
+  }
+
+  .home-posts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .home-posts .post {
+    width: 65%;
   }
 
   #snackbar {

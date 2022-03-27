@@ -57,7 +57,7 @@
           </div>
           <form action="/kerko.html" method="get">
             <input
-              type="text"
+              type="search"
               class="search-input rounded shadow"
               placeholder="Kërko"
               name="termi"
@@ -84,7 +84,7 @@
         <div class="hero-search">
         <form action="/kerko.html">
           <input
-            type="text"
+            type="search"
             class="hero-search-input rounded"
             placeholder="Kërko..."
             name="termi"
@@ -171,7 +171,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="home-blog">
           <h2>Postimet e fundit</h2>
           <div class="home-posts">
           </div>
@@ -417,11 +417,7 @@
         },
       });
 
-      const doktoretSwiper = new Swiper(".doktoret-swiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
+      
 
       const testimonialsSwiper = new Swiper(".testimonials-swiper", {
         pagination: {
