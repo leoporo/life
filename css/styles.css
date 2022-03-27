@@ -706,6 +706,10 @@ footer img {
     gap: 0;
   }
 
+  .container .hero-tagline {
+    font-size: 4rem;
+  }
+
   #snackbar {
     width: 70%;
     padding-left: 0;
