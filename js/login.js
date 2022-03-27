@@ -1,4 +1,4 @@
-// import { users } from "./datasource.js";
+import data from './db.js';
 
 if (sessionStorage.getItem("loggedIn") === "true"){
   window.location.href = "/";

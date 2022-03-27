@@ -44,6 +44,7 @@ h2 {
   font-size: 2rem;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -63,6 +64,57 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.home-posts {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 3rem;
+  margin-bottom: 8rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 8rem;
+  color: #111;
+  padding: 1rem 6rem;
+}
+
+.posts h3 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.posts p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.post {
+  padding: 3rem;
+  /* width: 50%; */
+  text-align: left;
+}
+
+.post:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.post-image-thumbnail {
+  float: left;
+  margin-right: 1rem;
+  width: 128px;
+  height: 128px;
+  border-radius: .2rem;
+  object-fit: cover;
 }
 
 .testimonial-header {
@@ -103,6 +155,7 @@ header {
   font-weight: bolder;
   text-align: left;
   letter-spacing: .9;
+  line-height: 1;
   color: #edf6f9;
   top: 5%;
   left: 5%;
@@ -242,8 +295,9 @@ header {
 
 .appointment-form input[type=text],
 .appointment-form input[type=email],
-.appointment-form input[type=date],
+.appointment-form input[type=datetime-local],
 .appointment-form select {
+  width: 100%;
   font-size: 1.5rem;
   border: none;
   padding: 1rem;
@@ -254,7 +308,7 @@ header {
   font-size: 1.5rem;
 }
 
-.appointment-form input[type=date] {
+.appointment-form input[type=datetime-local] {
   width: 100%;
   background-color: white;
 }
@@ -381,6 +435,14 @@ form {
 
 .btn-secondary:active {
   background-color: #e29578;
+}
+
+#noResults {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .goback-btn {

@@ -23,10 +23,10 @@
         <li><a id="closemenu"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg></a></li>
-        <li><a href="/">Ballina</a></li>
-        <li><a href="index.html#sherbimet_carousel">Shërbimet</a></li>
+        <li><a href="#">Ballina</a></li>
+        <li><a href="#sherbimet_carousel">Shërbimet</a></li>
         <li><a href="blog.html">Blogu</a></li>
-        <li><a href="index.html#rreth">Rreth nesh</a></li>
+        <li><a href="#rreth">Rreth nesh</a></li>
         <li><a href="rezervo.html" id="rezervo">Rezervo Termin</a></li>
       </ul>
     </nav>
@@ -69,48 +69,45 @@
         </div>
         <ul>
           <li><a href="/">Ballina</a></li>
-          <li><a href="index.html#sherbimet">Shërbimet</a></li>
+          <li><a id="goto_sherbimet">Shërbimet</a></li>
           <li><a href="blog.html">Blogu</a></li>
-          <li><a href="index.html#rreth">Rreth nesh</a></li>
+          <li><a id="goto_rreth">Rreth nesh</a></li>
         </ul>
       </nav>
       
     </header>
 
-    <div class="container">
-        <h2>Rezultatet e kërkimit</h2>
-        <div class="posts">
-        </div>
-        <div id="noResults">
-        <p>Nuk u gjet asnjë rezultat sipas termit "<span id="searchTerm"></span>"</p>   
-          <button class="btn goback-btn shadow" onclick="history.back()">
-              <img src="./images/icons/goback.png">
-              Kthehu prapa</button>
-        </div>
-    </div>
-    <button class="top-btn rounded" id="topBtn">
-      <img src="./images/icons/top.svg" class="top" />
-    </button>
-    <footer>
-      <div class="kontakti">
-        <h3>Kontakti:</h3>
-        <p>Telefoni: +383 49 123 456</p>
-        <p>Email: support@life.com</p>
-        <p>Adresa: Rr. Tirana 10000 Prishtinë</p>
-        <p>Republika e Kosovës</p>
-      </div>
-      <div>
-        <h3>Na ndiqni:</h3>
-        <a href="https://facebook.com" target="_blank">
-          <img src="./images/fb_icon.svg" alt="" />
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img src="./images/twitter_icon.svg" alt="" />
-        </a>
-      </div>
-    </footer>
+<div class="container">
+    <h2>Blog</h2>
+    <div class="posts"></div>
+</div>
 
-    <script type="module" src="./js/app.js"></script>
-    <script type="module" src="./js/search.js"></script>
-</body>
-</html>
+<button class="top-btn rounded" id="topBtn">
+    <img src="./images/icons/top.svg" class="top" />
+  </button>
+  <footer>
+    <div class="kontakti">
+      <h3>Kontakti:</h3>
+      <ul>
+        <li>Telefoni: +383 49 123 456</li>
+        <li>Email: support@life.com</li>
+        <li>Adresa: Rr. Tirana 10000 Prishtinë</li>
+        <li>Republika e Kosovës</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Na ndiqni:</h3>
+      <a href="https://facebook.com" target="_blank">
+        <img src="./images/fb_icon.svg" alt="" />
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="./images/twitter_icon.svg" alt="" />
+      </a>
+    </div>
+  </footer>
+
+  
+  <script type="module" src="./js/blog.js"></script>
+  <script type="module" src="./js/app.js"></script>
+  </body>
+  </html>
