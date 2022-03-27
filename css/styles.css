@@ -97,6 +97,18 @@ header {
   object-fit: cover;
 }
 
+.container .hero-tagline {
+  position: absolute;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: left;
+  letter-spacing: .9;
+  color: #edf6f9;
+  top: 5%;
+  left: 5%;
+  z-index: 5;
+}
+
 .overlay {
   position: absolute;
   top: 30rem;
@@ -107,8 +119,7 @@ header {
   overflow: hidden;
 }
 
-.sherbimet,
-.doktoret {
+.sherbimet {
   text-align: center;
   margin-bottom: 5rem;
 }
@@ -138,25 +149,6 @@ header {
 
 .service img {
   width: 6rem;
-}
-
-.doctor-cards {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.doctor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-}
-
-.doctor img {
-  width: 65%;
-  border-radius: 50%;
 }
 
 .author {
@@ -736,8 +728,7 @@ footer img {
     display: block;
   }
 
-  .sherbimet,
-  .doktoret {
+  .sherbimet {
     display: none;
   }
 
@@ -755,15 +746,6 @@ footer img {
   .service {
     border: none;
     width: 65%;
-  }
-
-  .doctor {
-    width: 65%;
-  }
-
-  .doctor img {
-    width: 50%;
-    height: 50%;
   }
 
   .testimonial {
