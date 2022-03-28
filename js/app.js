@@ -1,7 +1,3 @@
-export function removeQuotes(value) {
-  return value.replace(/\"/g, "");
-}
-
 const topBtn = document.querySelector("#topBtn  ");
 window.onscroll = () => showTopBtn();
 

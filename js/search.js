@@ -1,22 +1,53 @@
+import data from './db.js';
+import { renderPost } from './blog.js';
+
 const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
 const searchTerm = params.termi;
 
-import data from './db.js';
-import { renderPost } from './blog.js';
+const convertToEnglishAlphabet = (text) => {
+  let result = '';
+  for (let i = 0; i < text.length; i++) {
+    switch (text[i]) {
+      case 'ë':
+        result += 'e';
+        break;
+      case 'Ë':
+        result += 'E';
+        break;
+      case 'ç':
+        result += 'c';
+        break;
+      case 'Ç':
+        result += 'C';
+        break;
+      default:
+        result += text[i];
+        break;
+    }
+  }
+
+  return result;
+};
 
 const highlightText = text => `<span style='background-color: #f1b9a5;'>${text}</span>`;
 
 const search = term => {
-  let results = JSON.stringify(data.posts.filter(p => 
-    p.title.toLowerCase().includes(term.toLowerCase()) ||
-    p.content.toLowerCase().includes(term.toLowerCase())));
+  const anglicizedTerm = convertToEnglishAlphabet(term);
+
+  let results = JSON.stringify(data.posts.filter(p =>  {
+    const anglicizedTitle = convertToEnglishAlphabet(p.title);
+    const anglicizedContent = convertToEnglishAlphabet(p.content);
+
+    return anglicizedTitle.toLowerCase().includes(anglicizedTerm.toLowerCase()) ||
+    anglicizedContent.toLowerCase().includes(anglicizedTerm.toLowerCase());
+  }));
 
   let originalTextVariants = [];
-
-  const arr = [...results.matchAll(new RegExp(term, 'gi'))].map(a => a.index);
+  
+  const arr = [...convertToEnglishAlphabet(results).matchAll(new RegExp(anglicizedTerm, 'gi'))].map(a => a.index);
   
   arr.forEach(idx => {
     let temp = '';

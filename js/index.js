@@ -1,3 +1,5 @@
+import data from './db.js';
+
 document.querySelector("#goto_sherbimet").addEventListener("click", function(){
   document.querySelector(".sherbimet").scrollIntoView({
     behavior: "smooth"
@@ -9,8 +11,6 @@ document.querySelector("#goto_rreth").addEventListener("click", function(){
     behavior: "smooth"
   });
 });
-
-import data from './db.js';
 
 const latest_posts = data.posts.slice(data.posts.length-3, data.posts.length)
                           .sort((a, b) => b.id - a.id);
