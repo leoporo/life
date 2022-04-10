@@ -109,8 +109,8 @@
     padding-right: 2rem;
   }
 
-  .posts img {
-    width: 16rem;
+  .post-image {
+    width: 100%;
   }
 
   .form-subscribe {
