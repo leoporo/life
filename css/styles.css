@@ -658,7 +658,7 @@ ul {
   background-image: linear-gradient(rgba(255, 255, 255, 0), #fff);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 4rem auto auto auto;
@@ -732,12 +732,51 @@ ul {
   grid-area: 3 / 3 / span 1 / span 1;
 }
 
+.section-subscribe {
+  background-color: white;
+}
+
+.form-subscribe {
+  margin: 3rem;
+  padding: 2rem 3rem;
+  background-image: linear-gradient(to right, rgba(0, 109, 119 , .9), rgba(0, 109, 119, .1)), url(../images/subscribe.jpeg);
+  background-position: center;
+  border-radius: 8px;
+  color: #edf6f9;
+}
+
+.form-subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 45%;
+}
+
+.form-subscribe h2 {
+  color: #edf6f9;
+  margin: 0;
+}
+
+.form-subscribe p {
+  width: 45%;
+}
+
+.form-subscribe input[type=email] {
+  font-size: 1rem;
+  padding: .8rem;
+  color: #006d77;
+}
+
+.form-subscribe input[type=email]:focus {
+  outline: none;
+}
+
 footer {
   text-align: center;
   padding: 1rem 3rem;
   font-size: 0.9rem;
-  background-color: white;
-  color: #111;
+  background-color: #42999b;
+  color: #edf6f9;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
