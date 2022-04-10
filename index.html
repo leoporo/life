@@ -10,7 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -552,7 +554,7 @@
         <h2>Abonohu me email</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem minus optio voluptates iusto ullam reprehenderit facere? Nisi magni maxime eveniet asperiores, perferendis totam libero.</p>
         <form action="#">
-          <input type="email" name="email" id="email" placeholder="test@mail.com">
+          <input type="email" name="email" id="email" placeholder="filan.fisteku@mail.com">
           <button class="btn btn-secondary">Abonohu</button>
         </form>
       </div>
@@ -562,10 +564,10 @@
       <div class="kontakti">
         <h3>Kontakti:</h3>
         <ul>
-          <li>Telefoni: +383 49 123 456</li>
-          <li>Email: support@life.com</li>
           <li>Adresa: Rr. Tirana 10000 Prishtinë</li>
           <li>Republika e Kosovës</li>
+          <li>Telefoni: <a href="tel:+38349123456">+383 49 123 456</a></li>
+          <li>Email: <a href="mailto:support@life.com">support@life.com</a></li>
         </ul>
       </div>
       <div>
@@ -574,10 +576,10 @@
       <div>
         <h3>Na ndiqni:</h3>
         <a href="https://facebook.com" target="_blank">
-          <img src="./images/fb_icon.svg" alt="" />
+          <ion-icon name="logo-facebook"></ion-icon>
         </a>
         <a href="https://twitter.com" target="_blank">
-          <img src="./images/twitter_icon.svg" alt="" />
+          <ion-icon name="logo-instagram"></ion-icon>
         </a>
       </div>
     </footer>
@@ -597,5 +599,8 @@
         },
       });
     </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
