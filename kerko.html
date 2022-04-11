@@ -48,13 +48,12 @@
       </ul>
     </nav>
     <header>
-      <a href="/">
+      <a href="/" class="logo">
         <img
-          class="logo"
           src="./images/logo.png"
           alt="Logo"
           title="Logo"
-          width="96"
+          
         />
       </a>
 
@@ -95,18 +94,18 @@
         </div>
         <ul>
           <li><a href="/">Ballina</a></li>
-          <li><a href="index.html#sherbimet">Shërbimet</a></li>
+          <li><a id="goto_sherbimet">Shërbimet</a></li>
           <li><a href="blog.html">Blogu</a></li>
-          <li><a href="index.html#rreth">Rreth nesh</a></li>
+          <li><a id="goto_rreth">Rreth nesh</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="container">
-      <h2>Rezultatet e kërkimit</h2>
+      <h2 class="mt-lg mb-lg">Rezultatet e kërkimit</h2>
       <div class="posts"></div>
       <div id="noResults">
-        <p>
+        <p class="mb-sm">
           Nuk u gjet asnjë rezultat që përmban "<span id="searchTerm"></span>"
         </p>
         <button class="btn goback-btn shadow" onclick="history.back()">
@@ -119,26 +118,45 @@
       <img src="./images/icons/top.svg" class="top" />
     </button>
     <footer>
-      <div class="kontakti">
-        <h3>Kontakti:</h3>
-        <ul>
-          <li>Adresa: Rr. Tirana 10000 Prishtinë</li>
-          <li>Republika e Kosovës</li>
-          <li>Telefoni: <a href="tel:+38349123456">+383 49 123 456</a></li>
-          <li>Email: <a href="mailto:support@life.com">support@life.com</a></li>
-        </ul>
+      <div class="footer-first-part">
+        <div class="footer-logo">
+          <img src="./images/logo_white.png" alt="Logo">
+        </div>
+        <div class="sitemap">
+          <h3 class="mb-sm">Linqet</h3>
+          <ul>
+            <li><a href="rezervo.html">Rezervo termin</a></li>
+            <li><a href="index.html#sherbimet">Sherbimet</a></li>
+            <li><a href="blog.html">Blogu</a></li>
+            <li><a href="index.html#rreth">Rreth nesh</a></li>
+          </ul>
+        </div>
+        <div class="kontakti">
+          <h3 class="mb-sm">Kontakti</h3>
+          <ul>
+            <li>Adresa: Rr. Tirana 10000 Prishtinë</li>
+            <li>Republika e Kosovës</li>
+            <li>Telefoni: <a href="tel:+38349123456">+383 49 123 456</a></li>
+            <li>Email: <a href="mailto:support@life.com">support@life.com</a></li>
+          </ul>
+        </div>
+        <div class="follow">
+          <h3 class="mb-sm">Na ndiqni</h3>
+          <div class="icons">
+            <a href="https://facebook.com" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </div>
       </div>
-      <div>
-
-      </div>
-      <div>
-        <h3>Na ndiqni:</h3>
-        <a href="https://facebook.com" target="_blank">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
+      <div class="footer-second-part">
+        <p>&copy; 2022 Klinika Life. Të gjitha të drejtat e rezervuara.</p>
       </div>
     </footer>
 
