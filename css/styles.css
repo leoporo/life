@@ -707,7 +707,7 @@ ul {
 }
 
 .form-subscribe {
-  margin: 4.8rem;
+  margin: 0 4.8rem 4.8rem 4.8rem;
   padding: 3.2rem 4.8rem;
   background-image: linear-gradient(to right, rgba(0, 109, 119 , .9), rgba(0, 109, 119, .1)), url(../images/subscribe.jpeg);
   background-position: center;
