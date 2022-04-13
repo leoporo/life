@@ -1,4 +1,12 @@
-@media (max-width: 988px) {
+/* 66em = 1055px */
+@media (min-width: 66em) {
+  .testimonial-header,
+  .testimonials-carousel {
+    display: none;
+  }
+}
+
+@media (max-width: 66em) {
   header {
     padding: 0.5rem 1rem;
     gap: 0;
@@ -60,6 +68,7 @@
   .rreth {
     margin-top: 0;
   }
+
   .service {
     border: none;
     width: 65%;
@@ -74,14 +83,8 @@
   }
 }
 
-@media (min-width: 950px) {
-  .testimonial-header,
-  .testimonials-carousel {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
+/* 48em = 768px */
+@media (max-width: 48em) {
   .post img,
   .post h3 {
     margin-bottom: 1.6rem;
