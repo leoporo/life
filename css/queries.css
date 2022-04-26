@@ -20,17 +20,6 @@
     font-size: 4rem;
   }
 
-  .home-posts {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-
-  .home-posts .post {
-    width: 65%;
-  }
-
   #snackbar {
     width: 70%;
     padding-left: 0;
@@ -81,6 +70,11 @@
   .carousel {
     display: block;
   }
+
+  .home-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* 48em = 768px */
@@ -88,6 +82,19 @@
   .post img,
   .post h3 {
     margin-bottom: 1.6rem;
+  }
+
+  .home-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .home-posts .post {
+    width: 65%;
   }
 
   .rreth p {

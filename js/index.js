@@ -12,7 +12,7 @@ document.querySelector("#goto_rreth").addEventListener("click", function(){
   });
 });
 
-const latest_posts = data.posts.slice(data.posts.length-3, data.posts.length)
+const latest_posts = data.posts.slice(data.posts.length-4, data.posts.length)
                           .sort((a, b) => b.id - a.id);
 
 latest_posts.forEach(post => {
